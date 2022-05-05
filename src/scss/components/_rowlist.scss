@@ -1,0 +1,35 @@
+.rowlist {
+  width: 100%;
+  margin-top: 10px;
+
+  &__wrapper {
+    padding-left: 15px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px 15px 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__iconbox {
+    width: 30px;
+    height: 30px;
+    background-color: $color-grey-200;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 18px;
+    }
+  }
+}

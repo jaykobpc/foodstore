@@ -1,0 +1,26 @@
+.rowlistcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  &__image {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 20vh;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__smtext {
+    color: $color-green-primary;
+    font-size: 13px;
+  }
+}

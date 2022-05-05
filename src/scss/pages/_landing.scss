@@ -1,0 +1,102 @@
+.landingview {
+  width: 100%;
+  background-color: $color-green-primary;
+  height: 100%;
+  overflow-y: auto;
+
+  @include respond(tab-port) {
+    top: 50px;
+  }
+
+  &__container {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    //mods
+    position: relative;
+    top: 100px;
+
+    @include respond(tab-port) {
+      max-width: 90%;
+    }
+  }
+
+  &__imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: spinCircle;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &__img {
+      object-fit: cover;
+      margin-left: -20px;
+    }
+  }
+
+  &__textview {
+    padding: 20px 0;
+    text-align: center;
+    font-family: inherit;
+    color: $color-white;
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      letter-spacing: 0.0566px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  &__btngroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__btn {
+      border: none;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 0;
+      margin-bottom: 15px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+}
+
+.btn-green {
+  background-color: $color-green-primary;
+  color: $color-white;
+}
+
+.btn-light-green {
+  background-color: $color-green-200;
+  color: $color-white;
+  transition: all 300ms ease;
+
+  &:hover {
+    background-color: $color-green-300;
+  }
+}
+
+@keyframes spinCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

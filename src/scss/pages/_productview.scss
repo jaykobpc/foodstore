@@ -1,0 +1,199 @@
+.productview {
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    // max-width: 1200px;
+    // margin: 0 auto;
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
+    &__imagebox {
+        background: url('@/assets/FoodAssets/food_1.jpg');
+        height: 40vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 5px;
+        width: 100%;
+        position: fixed;
+        transition: all 200ms ease;
+
+        &__icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-white;
+            font-size: 20px;
+            background-color: rgba($color-green-primary, 0.15);
+        }
+    }
+
+    &__contextbox {
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__infobox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+
+        &__favourites {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-grey-800;
+            font-size: 18px;
+            background-color: rgba($color-green-primary, 0.15);
+        }
+    }
+
+    &__titlebox {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 20px;
+            max-width: 90%;
+            font-weight: 600;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-grey-700;
+        }
+    }
+
+    &__cartbox {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        &__pricecounter {
+            color: $color-green-primary;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &__cartgroup {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__btn {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $color-green-primary;
+            color: $color-white;
+            border: none;
+        }
+
+        &__counter {
+            margin: 0 10px;
+            color: $color-green-primary;
+            font-size: 16px;
+        }
+    }
+
+    &__extras {
+        padding: 5px 10px;
+        margin-bottom: 15px;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 5px;
+        }
+
+        &__title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        &__wrapper {
+            border: 0.65px solid $color-grey-400;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__inputtitle {
+            margin: 0 5px;
+        }
+
+        &__checkbox {
+            appearance: checkbox;
+            -webkit-appearance: checkbox;
+        }
+
+        &__value {
+            color: $color-green-primary;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    &__footer {
+        position: fixed;
+        width: inherit;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding: 15px 30px;
+        left: 0;
+        right: 0;
+    }
+
+    &__cartbutton {
+        background-color: $color-green-primary;
+        padding: 15px;
+        border-radius: 4px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 14px;
+        color: $color-white;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.icon-green {
+    color: $color-green-primary;
+}
+
+.acrylic-effect {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,47 @@
+.bottomnavigation {
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.15);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    color: $color-grey-700;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    i {
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+
+    &:hover {
+      background-color: rgba($color-green-primary, 0.15);
+    }
+  }
+
+  &__text {
+    font-family: inherit;
+    font-size: 12px;
+  }
+}
+
+.active_page {
+  color: $color-green-primary;
+
+  span {
+    font-weight: 600;
+  }
+}

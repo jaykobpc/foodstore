@@ -1,0 +1,35 @@
+.dashbanner {
+  margin: 0 10px;
+  background-image: url("@/assets/FoodAssets/landing_1.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba($color-green-primary, 0.15);
+  height: 23vh;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 5px 10px;
+  font-family: inherit;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-green-primary;
+    color: $color-white;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-top: 25px;
+  }
+}
