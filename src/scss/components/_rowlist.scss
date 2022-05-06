@@ -17,6 +17,9 @@
   &__title {
     font-size: 18px;
     font-weight: 600;
+    color: $color-grey-800;
+    font-family: inherit;
+    letter-spacing: 0.278px;
   }
 
   &__iconbox {

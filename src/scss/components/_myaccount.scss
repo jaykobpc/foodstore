@@ -1,0 +1,83 @@
+.myaccountview {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        overflow-y: auto;
+    }
+
+    &__imagebox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        &__btnedit {
+            border: none;
+            background-color: rgba($color-green-primary, 0.15);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 500;
+            color: $color-green-primary;
+            padding: 8px 5px;
+            border-radius: 3px;
+        }
+    }
+
+    &__formbox {
+        padding: 15px 10px;
+
+        &__formgroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            label {
+                font-family: inherit;
+                font-size: 14px;
+                margin-bottom: 3px;
+                font-weight: 400;
+                color: $color-grey-800;
+            }
+
+            &__input {
+                padding: 16px 10px;
+                font-family: inherit;
+                font-size: 14px;
+                border: none;
+                border-radius: 3px;
+                color: $color-grey-800;
+                background-color: $color-grey-200;
+
+                &::placeholder {
+                    font-family: inherit;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            &__submit {
+                border: none;
+                font-family: inherit;
+                font-size: 14px;
+                width: 100%;
+                background-color: $color-green-primary;
+                color: $color-white;
+                padding: 14px 0;
+                cursor: pointer;
+                margin-top: 5px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

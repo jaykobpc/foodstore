@@ -1,0 +1,73 @@
+.profilebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px 8px 5px;
+    margin-bottom: 15px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 0.65px;
+        background-color: $color-grey-300;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__imagebox {
+        margin: 0 8px;
+
+        &__img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &__textview {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: $color-grey-800;
+
+        &__title {
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__smtitle {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    &__btnout {
+        border: none;
+        background-color: inherit;
+        color: red;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 8px 6px;
+        border-radius: 3px;
+        transition: background-color 0.25s ease;
+
+        &:hover {
+            background-color: rgba(red, 0.15);
+        }
+    }
+}

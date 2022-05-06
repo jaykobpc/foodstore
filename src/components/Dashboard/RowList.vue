@@ -3,9 +3,9 @@
     <div class="rowlist__wrapper">
       <div class="rowlist__header">
         <h2 class="rowlist__title">{{ rowListTitle }}</h2>
-        <div class="rowlist__iconbox">
-          <i class="bx bx-right-arrow-alt"></i>
-        </div>
+        <!-- <div class="rowlist__iconbox">
+          <span>&nbsp;</span>
+        </div> -->
       </div>
       <div class="rowlist__rowitems">
         <swiper :slides-per-view="slidesPerView" :space-between="18">
@@ -55,6 +55,20 @@ export default {
         slidesPerView.value = 2;
       }
     });
+
+    // onMounted(() => {
+    //   if (currentWidth > 1024) {
+    //     slidesPerView.value = 6;
+    //   }
+    //   //768
+    //   if (currentWidth < 900) {
+    //     slidesPerView.value = 4;
+    //   }
+    //   //500
+    //   if (currentWidth < 500) {
+    //     slidesPerView.value = 2;
+    //   }
+    // })
 
     return {
       slidesPerView,

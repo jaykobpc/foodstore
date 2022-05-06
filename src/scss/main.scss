@@ -9,13 +9,19 @@
 @import "./components/bottomnavigation";
 @import "./components/dashbanner";
 @import "./components/navbar";
+@import "./components/profilebox";
 @import "./components/rowlist";
 @import "./components/rowlistcard";
+@import "./components/myaccount";
+@import "./components/mylocation";
+@import "./components/orderhistory";
 
 @import "./pages/authforms";
 @import "./pages/cartview";
 @import "./pages/confirmorder";
 @import "./pages/dashboard";
 @import "./pages/landing";
+@import "./pages/orderview";
 @import "./pages/productview";
 @import "./pages/favourites";
+@import "./pages/profileview";

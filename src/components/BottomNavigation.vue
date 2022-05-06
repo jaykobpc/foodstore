@@ -27,7 +27,7 @@
       </div>
       <div
         role="button"
-        @click="changeRoute('settings')"
+        @click="changeRoute('profile')"
         :class="{ active_page: currentRoute == 'SettingsView' }"
         class="bottomnavigation__item">
         <i class="bottomnavigation__icon bx bxs-user-circle"></i>

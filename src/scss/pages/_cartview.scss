@@ -1,15 +1,15 @@
 .cartview {
     height: 100%;
     overflow-y: auto;
-    padding: 5px 8px;
+    padding: 0px 5px 15px 5px;
 
     &__titlebox {
         padding: 5px 0;
-        margin-bottom: 5px;
 
         &__text {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 600;
+            color: $color-grey-800;
         }
     }
 
@@ -24,6 +24,7 @@
         position: relative;
         padding-bottom: 10px;
         padding-top: 10px;
+        overflow: hidden;
 
         &::after {
             content: '';
@@ -44,17 +45,30 @@
             width: 80px;
             object-fit: cover;
             border-radius: 6px;
+            height: 100%;
         }
     }
 
     &__context {
         margin: 0 10px;
         flex: 1;
+        overflow: hidden;
+
+        &__group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow: hidden;
+        }
 
         &__title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             margin-bottom: 5px;
+            max-width: 70%;
+            color: $color-grey-700;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
         }
     }
 

@@ -9,9 +9,14 @@
       />
     </div>
     <div class="cartview__context">
-      <h3 class="cartview__context__title">
-        Roasted lamb chops with corriander
-      </h3>
+      <div class="cartview__context__group">
+        <h3 class="cartview__context__title">
+          Roasted lamb chops with corriander
+        </h3>
+        <div title="Delete" class="favourites__iconbox icon-green">
+          <i class="bx bxs-trash"></i>
+        </div>
+      </div>
       <div class="cartview__cartbox">
         <div class="cartview__cartgroup">
           <button
@@ -21,10 +26,7 @@
             -
           </button>
           <span class="cartview__cartgroup__counter">{{ counter }}</span>
-          <button
-            @click="btnCompute('add')"
-            class="cartview__cartgroup__btn"
-          >
+          <button @click="btnCompute('add')" class="cartview__cartgroup__btn">
             +
           </button>
         </div>
@@ -61,10 +63,10 @@ export default {
     };
 
     return {
-        counter,
-        productTotal,
-        btnCompute
-    }
+      counter,
+      productTotal,
+      btnCompute,
+    };
   },
 };
 </script>

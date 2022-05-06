@@ -30,7 +30,7 @@
           </div>
           <i class="bx bx-chevron-right"></i>
         </router-link>
-        <!-- <router-link to="/settings" class="profileview__link">
+        <router-link to="/settings" class="profileview__link">
           <div class="profileview__link__group">
             <div class="profileview__link__iconbox">
               <i class="bx bxs-cog"></i>
@@ -38,7 +38,7 @@
             <div class="profileview__link__title">Settings</div>
           </div>
           <i class="bx bx-chevron-right"></i>
-        </router-link> -->
+        </router-link>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
 import ProfileBox from "@/components/Profile/Profilebox.vue";
 
 export default {
-  name: "SettingsView",
+  name: "ProfileView",
   components: {
     ProfileBox,
   },

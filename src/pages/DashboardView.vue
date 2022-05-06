@@ -31,7 +31,7 @@ export default {
       if (currentPage == "StoreView") this.currentRoute = "Home";
       if (currentPage == "FavouritesView") this.currentRoute = "Favourites";
       if (currentPage == "CartView") this.currentRoute = "Cart";
-      if (currentPage == "SettingsView") this.currentRoute = "Settings";
+      if (currentPage == "SettingsView") this.currentRoute = "Profile";
     },
   },
   mounted() {
@@ -42,7 +42,7 @@ export default {
       if (to.name == "StoreView") this.currentRoute = "Home";
       if (to.name == "FavouritesView") this.currentRoute = "Favourites";
       if (to.name == "CartView") this.currentRoute = "Cart";
-      if (to.name == "SettingsView") this.currentRoute = "Settings";
+      if (to.name == "SettingsView") this.currentRoute = "Profile";
     },
   },
 };

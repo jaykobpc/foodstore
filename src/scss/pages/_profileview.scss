@@ -1,0 +1,64 @@
+.profileview {
+    height: 100%;
+    overflow-y: auto;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__listview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-grey-800;
+        padding: 14px 20px;
+        position: relative;
+        transition: background-color 0.25s ease;
+
+        &:hover {
+            background-color: $color-grey-200;
+        }
+
+        &::after {
+            content: '';
+            height: 0.25px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $color-grey-300;
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__iconbox {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba($color-green-primary, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: $color-green-primary;
+        }
+
+        &__title {
+            font-family: inherit;
+            font-size: 15px;
+            margin: 0 14px;
+        }
+    }
+}

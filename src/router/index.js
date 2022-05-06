@@ -22,6 +22,13 @@ import Cartview from "@/views/Dashboard/CartView.vue";
 import FavouritesView from "@/views/Dashboard/FavouritesView";
 import SettingsView from "@/views/Dashboard/SettingsView";
 
+//views Profile : [Child routes]
+import Profile from "@/views/Profile/Profile";
+import MyAccount from "@/views/Profile/MyAccount";
+import OrderHistory from "@/views/Profile/OrderHistory";
+import Settings from "@/views/Profile/Settings";
+import MyLocation from "@/views/Profile/MyLocation";
+
 const routes = [
   {
     path: "/",
@@ -68,12 +75,38 @@ const routes = [
         component: Cartview,
       },
       {
-        path: "settings",
-        name: "SettingsView",
+        path: "profile",
+        name: 'SettingsView',
         component: SettingsView,
       },
     ],
   },
+  {
+    path: "/myprofile",
+    name: 'ProfileView',
+    component: Profile,
+  },
+  {
+    path: "/mylocation",
+    name: 'MyLocation',
+    component: MyLocation,
+  },
+  {
+    path: '/myaccount',
+    name: 'MyAccount',
+    component: MyAccount,
+  },
+  {
+    path: '/orderhistory',
+    name: 'OrderHistory',
+    component: OrderHistory,
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: Settings,
+  },
+  //break here
   {
     path: "/locationsetup",
     name: "LocationSetupView",

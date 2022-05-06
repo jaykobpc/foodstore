@@ -1,0 +1,10 @@
+.mylocationview {
+    height: 100%;
+    overflow-y: auto;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

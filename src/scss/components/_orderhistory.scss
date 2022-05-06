@@ -1,0 +1,29 @@
+.orderhistoryview {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+        padding: 5px 8px;
+        overflow-y: auto;
+    }
+
+    &__groupbox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        &__title {
+            font-size: 16px;
+            color: $color-grey-800;
+            margin-bottom: 5px;
+        }
+
+        &__context {
+            background-color: $color-white;
+            border: 0.65px solid $color-grey-300;
+            border-radius: 5px;
+        }
+    }
+}
