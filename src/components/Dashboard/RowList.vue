@@ -42,10 +42,6 @@ export default {
 
     window.addEventListener("resize", (e) => {
       currentWidth = e.currentTarget.innerWidth;
-      //1024
-      if (currentWidth > 1024) {
-        slidesPerView.value = 6;
-      }
       //768
       if (currentWidth < 900) {
         slidesPerView.value = 4;
@@ -55,20 +51,6 @@ export default {
         slidesPerView.value = 2;
       }
     });
-
-    // onMounted(() => {
-    //   if (currentWidth > 1024) {
-    //     slidesPerView.value = 6;
-    //   }
-    //   //768
-    //   if (currentWidth < 900) {
-    //     slidesPerView.value = 4;
-    //   }
-    //   //500
-    //   if (currentWidth < 500) {
-    //     slidesPerView.value = 2;
-    //   }
-    // })
 
     return {
       slidesPerView,

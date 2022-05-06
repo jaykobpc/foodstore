@@ -18,7 +18,7 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body role="application" translate="no">
+  <body role="application" translate="no" cz-shortcut-listen="false">
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
@@ -26,7 +26,8 @@
         continue.</strong
       >
     </noscript>
-    <div device-frame="450x768" id="app"></div>
+    <div device-frame="450x768" fit-jetpack id="app"></div>
+   
     <!-- built files will be auto injected -->
   </body>
 </html>

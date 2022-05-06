@@ -3,6 +3,7 @@
   background-color: $color-green-primary;
   height: 100%;
   overflow-y: auto;
+  padding: 0 10px;
 
   @include respond(tab-port) {
     top: 50px;

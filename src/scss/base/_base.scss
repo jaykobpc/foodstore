@@ -99,7 +99,7 @@ a {
   margin: 0 auto;
   height: 768px;
   top: 50px;
-  border: 12px solid $color-grey-300;
+  border: 13px solid $color-grey-400;
   border-radius: 12px;
 
   @include respond(tab-port) {
