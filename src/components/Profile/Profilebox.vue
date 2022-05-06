@@ -10,7 +10,7 @@
         />
       </div>
       <div class="profilebox__textview">
-        <h3 class="profilebox__textview__title">Karina Gonzales</h3>
+        <h3 class="profilebox__textview__title">Karina Wu</h3>
         <p class="profilebox__textview__smtitle">+254 704 000 000</p>
       </div>
     </div>
