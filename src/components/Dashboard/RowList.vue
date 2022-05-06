@@ -9,8 +9,8 @@
       </div>
       <div class="rowlist__rowitems">
         <swiper :slides-per-view="slidesPerView" :space-between="18">
-          <swiper-slide v-for="index in 10" :key="index">
-            <row-list-card />
+          <swiper-slide v-for="(item, index) in dataList" :key="index">
+            <row-list-card :image="item.img" :title="item.name" :price="item.price" />
           </swiper-slide>
         </swiper>
       </div>
@@ -30,6 +30,9 @@ export default {
       type: String,
       default: "Rowlist",
     },
+    dataList: {
+      type: [Array, Object],
+    }
   },
   components: {
     Swiper,
