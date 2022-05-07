@@ -3,6 +3,7 @@
   <row-list :rowListTitle="'Featured'" :dataList="featuredList" />
   <row-list :rowListTitle="'Soups'" :dataList="soupList" />
   <row-list :rowListTitle="'Seafood'" :dataList="seaFood" />
+  <row-list :rowListTitle="'Dessert'" :dataList="dessertList" />
 </template>
 
 <script>
@@ -24,11 +25,14 @@ export default {
     let featuredList = store.state.featuredList;
     // sea food
     let seaFood = store.state.seaFood;
+    //dessert
+    let dessertList = store.state.dessertList;
 
     return {
       soupList,
       featuredList,
       seaFood,
+      dessertList,
     };
   },
 };
