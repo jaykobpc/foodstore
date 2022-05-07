@@ -25,6 +25,10 @@
         width: 100%;
         position: fixed;
         transition: all 200ms ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
 
         &__icon {
             width: 35px;
@@ -164,7 +168,7 @@
     }
 
     &__footer {
-        position: fixed;
+        position: absolute;
         width: inherit;
         bottom: 0;
         display: flex;
